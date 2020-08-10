@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Your Fait Awaits!</title>
+	<meta name="description" content="Animated WebGL lines created with the THREE.MeshLine library" />
+	<meta name="keywords" content="webgl, three.js, meshline, animation, lines" />
+	<meta name="author" content="Codrops" />
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Exo+2:wght@500&display=swap"
+		rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function () {
+			var e, t = document.createElement("style");
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window
+				.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+		};
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+	<link href="vendors.css" rel="stylesheet">
+	<link href="index.css" rel="stylesheet">
+	<style>
+		body.cda-noimg #cdawrap {
+			--cda-width: 280px;
+			--cda-left: 3rem;
+			--cda-right: auto;
+			--cda-top: auto;
+			--cda-bottom: 3rem;
+			--cda-background: transparent;
+			padding: 0;
+			--cda-border-width: 0;
+			--cda-text-color: #fff;
+			z-index: 0;
+			font-family: 'Cinzel Decorative',
+				cursive;
+			font-size: inherit;
+			--cda-text-weight: 400;
+			--cda-sp-color: #8d919f;
+		}
+	</style>
+</head>
+
+<body class="cda-noimg cda-removeleft">
+	<div class="overlay"></div>
+	<main>
+		<div class="frame row">
+			<div class="column" style="text-align: left; font-size: 1.4rem;">
+				<h1>Your Fait Awaits!</h1>
+			</div>
+			<div class="column" style="text-align: right;">
+				<a style="cursor: pointer;">
+					<h1 class="modal-trigger" data-modal="modal-name">About</h1>
+				</a>
+			</div>
+		</div>
+
+		<div class="modal" id="modal-name">
+			<div class="modal-sandbox"></div>
+			<div class="modal-box">
+				<div class="modal-header row">
+					<div class="column" style="text-align: left; font-size: 1.4rem;">
+						<h1>Your Fait Awaits!</h1>
+					</div>
+					<div class="column" style="text-align: right; font-size: 1.4rem;">
+						<div class="close-modal">&#10006;</div>
+					</div>
+				</div>
+				<div class="modal-body">
+					<p>Hoping to get the OpenGPT-3 API access to get started with our app.<br>Creator: Daniel
+						Gimness<br>Email: dgimness@gmail.com</p>
+					<!-- <button class="close-modal">Close!</button> -->
+				</div>
+			</div>
+		</div>
+	</main>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="vendors.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
