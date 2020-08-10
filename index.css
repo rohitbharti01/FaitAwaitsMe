@@ -5,11 +5,9 @@ body {
   --color-bg-2: #282d33;
   --color-link: #ffffff;
   --color-link-hover: #ffd500;
-  background: radial-gradient(
-    ellipse at 50% 50%,
-    var(--color-bg) 40%,
-    var(--color-bg-2) 150%
-  );
+  background: radial-gradient(ellipse at 50% 50%,
+      var(--color-bg) 40%,
+      var(--color-bg-2) 150%);
 }
 
 .row {
@@ -25,7 +23,7 @@ body {
 }
 
 h1 {
-  margin: 1.2rem 0;
+  margin: 0.5rem 0;
 }
 
 /* ----------------------------------------------------------------- */
